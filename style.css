@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
 
+:root {
+    --ff: 'Open Sans', sans-serif;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -14,7 +18,7 @@
     border-color: transparent;
     border: none;
     font-size: 2rem;
-    color: lightblue;
+    color: darkblue;
     cursor: pointer;
     transition: all 0.3s linear;
     animation: bounce 2s ease-in-out infinite;
@@ -31,3 +35,41 @@
         transform: scale(1);
     }
 }
+
+.header {
+    width: 30vw;
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;    
+    justify-content: space-between;
+    padding: 1.5rem;    
+    background-color: lightcyan;
+}
+
+.header p {
+    font-family: var(--ff);
+    font-size: 26px;
+    font-weight: 700;
+    text-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.header span {
+    color: blueviolet;
+    font-weight: 700;
+    text-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.close-btn {
+    background: transparent;
+    border-color: transparent;
+    font-size: 1.5rem;  
+    color: red;      
+}
+
+.close-btn:hover {    
+    color: rgb(200, 120, 120);
+    transform: scale(1.4);
+}
+
+
+
