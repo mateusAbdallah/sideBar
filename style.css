@@ -36,7 +36,7 @@
     }
 }
 
-.header {
+.sidebar {
     width: 30vw;
     height: 100vh;
     display: flex;
@@ -46,14 +46,14 @@
     background-color: lightcyan;
 }
 
-.header p {
+.sidebar p {
     font-family: var(--ff);
     font-size: 26px;
     font-weight: 700;
     text-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-.header span {
+.sidebar span {
     color: blueviolet;
     font-weight: 700;
     text-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
