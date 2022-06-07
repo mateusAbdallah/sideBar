@@ -11,6 +11,7 @@
 }
 
 .sidebar-toggle {
+    visibility: hidden;
     position: fixed;
     right: 3rem;
     top: 1.5rem;
@@ -37,23 +38,26 @@
 }
 
 .sidebar {
-    width: 30vw;
+    width: 100vw;
     height: 100vh;
-    display: flex;
-    align-items: flex-start;    
-    justify-content: space-between;
-    padding: 1.5rem;    
+    padding: 1rem;
     background-color: lightcyan;
 }
 
-.sidebar p {
+.sidebar__header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.sidebar__header p {
     font-family: var(--ff);
     font-size: 26px;
     font-weight: 700;
     text-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
 }
 
-.sidebar span {
+.sidebar__header span {
     color: blueviolet;
     font-weight: 700;
     text-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
@@ -71,5 +75,82 @@
     transform: scale(1.4);
 }
 
+.links {
+    padding-top: 2rem;
+    line-height: 2.5rem;    
+}
+
+.links li, a {
+    list-style-type: none;
+    text-decoration: none;
+    color: gray;
+    font-family: var(--ff);
+    font-size: 26px;
+}
+
+.links li:hover {
+    padding: 0.5rem;
+    background-color: lightblue;
+}
+
+.social-media {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 4rem;
+    list-style-type: none;
+}
+
+
+
+
+/*
+
+
+
+.sidebar {
+    width: 30vw;
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;    
+    justify-content: space-between;
+    padding: 1.5rem;    
+    background-color: lightcyan;
+}
+
+.sidebar__logo p {
+    font-family: var(--ff);
+    font-size: 26px;
+    font-weight: 700;
+    text-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.sidebar__logo span {
+    color: blueviolet;
+    font-weight: 700;
+    text-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.close-btn {
+    background: transparent;
+    border-color: transparent;
+    font-size: 1.5rem;  
+    color: red;      
+}
+
+.close-btn:hover {    
+    color: rgb(200, 120, 120);
+    transform: scale(1.4);
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+}
+
+.links ul, a {
+    list-style-type: none;
+    text-decoration: none;
+}
+*/
 
 
